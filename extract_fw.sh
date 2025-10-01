@@ -51,7 +51,9 @@ if ls wpss* > /dev/null 2>&1; then      # WPSS
     rm wpss*
 fi
 
-rm README.md
+if ls README* > /dev/null 2>&1; then
+    rm README.md
+fi
 echo -e "Cleanup completed!"
 
 export tmpdira="/sdcard/ext_temp"
